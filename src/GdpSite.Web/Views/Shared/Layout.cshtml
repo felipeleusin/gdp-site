@@ -1,0 +1,67 @@
+﻿@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>@if (ViewBag.Title != null ) { @ViewBag.Title } else {<text>GDP - Gerenciamento de Projetos</text> }</title>
+    <script src="//use.edgefonts.net/league-gothic.js"></script>
+    @Styles.Render("~/bundles/commonStyles")
+    @Scripts.Render("~/bundles/modernizr")
+</head>
+<body>
+    <div class="navbar navbar-fixed-top">
+        <div class="navbar-inner">
+            <div class="container">
+                <a class="brand" href="/">&nbsp;</a>
+                <ul class="nav">
+                    <li><a href="/page/viabilidade" class="uma-linha">Viabilidade</a></li>
+                    <li><a href="/page/estudos-preliminares">Estudos<br> Preliminares</a></li>
+                    <li><a href="/page/projeto-basico">Projeto<br> Básico</a></li>
+                    <li><a href="/page/projeto-executivo">Projeto<br> Executivo</a></li>
+                    <li><a href="/page/consultorias" class="uma-linha">Consultoria</a></li>
+                    <li><a href="/page/arquitetura-de-processo">Arquitetura<br> de Processo</a></li>
+                    <li><a href="/page/gerenciamento-projetos" class="uma-linha">Gerenciamento</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="main-container container" >
+        @RenderBody()
+    </div>
+
+    <div class="footer">
+        <div class="container clearfix">
+            <div class="row">
+                <div class="span4">
+                    <img src="@Url.Content("~/Content/images/logo.png")" alt="GDP">
+
+                    <div class="contact-info">
+                        Av. Treze de Maio, 15<br>
+                        Centro - Rio de Janeiro<br>
+                        <i class="icon-phone"></i> (21) 2523-2222
+                    </div>
+                </div>
+                <div class="span8">
+                    <h3 class="page-title">Contato</h3>
+
+                    <form method="POST">
+                        <div class="row">
+                            <div class="span6">                                                    
+                                <input type="text" class="span6 input-contato" name="Name" placeholder="Nome ou Empresa">
+                                <textarea rows="5" class="span6 input-contato" placeholder="Mensagem"></textarea>                        
+                            </div>
+                            <div class="span1">
+                                <button type="submit" class="enviar-contato">Enviar</button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

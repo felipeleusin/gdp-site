@@ -1,0 +1,126 @@
+﻿@import "bootstrap/less/bootstrap.less";
+
+@cinzaTexto: #828282;
+
+body {
+	padding-top: 85px;
+	font-size: 16px;
+}
+
+.navbar {
+
+	.navbar-inner {
+		height: 85px;
+	}
+
+	.brand {
+		background-image: url(images/logo.png);
+		background-repeat: no-repeat;
+		display: inline-block;
+		width: 233px;
+		height: 70px;
+		padding: 0;
+	}
+
+	.nav {
+		float: right;
+		height: 50px;
+
+		border-left: 1px solid @orange;
+
+		> li {
+			height: 50px;			
+			text-align: center;
+
+			> a {
+				border-right: 1px solid @orange;
+				text-transform: uppercase;
+				padding: 0 10px;
+				height: 40px;
+				padding-top: 10px;
+				font-size: 11px;
+				line-height: 1.2;
+			}
+
+			> a:hover {
+				background-color: @orange;
+				color: @white;
+			}
+
+			> .uma-linha {
+				padding-top: 20px;
+				height: 30px;
+			}
+		}
+	}
+}
+
+.main-container {
+	border-top: 9px solid @orange;
+	border-bottom: 9px solid @orange;
+	padding: 35px 0;
+}
+
+.footer {
+	#gradient.vertical(@navbarBackground, @navbarBackgroundHighlight);
+	height: 100%;
+
+	font-family: Arial, sans-serif;
+	font-size: 0.75em;
+	color: @textColor;
+	padding-top: 40px;
+
+	.page-title {
+		color: @cinzaTexto;
+	}
+}
+
+.page-title {
+	font-family: "league-gothic", sans-serif;
+	text-transform: uppercase;
+	color: @orange;
+	font-size: 2.1em;
+	font-weight: normal;
+}
+
+.page-subtitle {
+	font-family: "league-gothic", sans-serif;
+	text-transform: uppercase;
+	color: @cinzaTexto;
+	font-size: 1.5em;
+	font-weight: normal;
+}
+
+h4 {
+	font-family: "league-gothic", sans-serif;
+	text-transform: uppercase;
+	color: @cinzaTexto;
+	font-size: 1.2em;
+	font-weight: normal;
+}
+
+.contact-info {
+	border-top: 1px solid @grayLighter;
+	padding-left: 8px;
+	padding-top: 15px;
+	margin-top: 10px;
+}
+
+.footer .input-contato {
+	background-color: #e8e8e8;
+	color: @cinzaTexto;
+}
+
+.enviar-contato {
+	background-color: #cecdcd;
+	.border-radius(3px);
+	width: 70px;
+	height: 150px;
+	font-family: "league-gothic", sans-serif;
+	font-size: 30px;
+	color: white;
+}
+
+.enviar-contato:hover {
+	background-color: lighten(#696969, 15%);
+}
