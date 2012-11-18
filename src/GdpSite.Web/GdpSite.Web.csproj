@@ -161,18 +161,6 @@
     <Content Include="Content\bootstrap\ico\favicon.ico" />
     <Content Include="Content\bootstrap\img\glyphicons-halflings-white.png" />
     <Content Include="Content\bootstrap\img\glyphicons-halflings.png" />
-    <Content Include="Content\bootstrap\less\bootstrap.css">
-      <DependentUpon>bootstrap.less</DependentUpon>
-    </Content>
-    <Content Include="Content\bootstrap\less\bootstrap.min.css">
-      <DependentUpon>bootstrap.less</DependentUpon>
-    </Content>
-    <Content Include="Content\bootstrap\less\font-awesome.css">
-      <DependentUpon>font-awesome.less</DependentUpon>
-    </Content>
-    <Content Include="Content\bootstrap\less\font-awesome.min.css">
-      <DependentUpon>font-awesome.less</DependentUpon>
-    </Content>
     <Content Include="Content\bootstrap\less\tests\buttons.html" />
     <Content Include="Content\bootstrap\less\tests\css-tests.css" />
     <Content Include="Content\bootstrap\less\tests\css-tests.html" />
@@ -183,12 +171,6 @@
     <Content Include="Content\bootstrap\less\tests\navbar.html" />
     <Content Include="Content\images\logo-gdp.png" />
     <Content Include="Content\images\logo.png" />
-    <Content Include="Content\site.css">
-      <DependentUpon>site.less</DependentUpon>
-    </Content>
-    <Content Include="Content\site.min.css">
-      <DependentUpon>site.less</DependentUpon>
-    </Content>
     <Content Include="Global.asax" />
     <Content Include="Scripts\bootstrap\js\bootstrap-affix.js" />
     <Content Include="Scripts\bootstrap\js\bootstrap-alert.js" />
