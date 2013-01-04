@@ -169,42 +169,21 @@
     <Content Include="Content\bootstrap\less\tests\navbar-fixed-top.html" />
     <Content Include="Content\bootstrap\less\tests\navbar-static-top.html" />
     <Content Include="Content\bootstrap\less\tests\navbar.html" />
+    <Content Include="Content\font\League_Gothic-webfont.svg" />
+    <Content Include="Content\gdp\home\arquitetura-de-processo.jpg" />
+    <Content Include="Content\gdp\home\consultoria.jpg" />
+    <Content Include="Content\gdp\home\estudos-preliminares.jpg" />
+    <Content Include="Content\gdp\home\gerenciamento.jpg" />
+    <Content Include="Content\gdp\home\projeto-basico.jpg" />
+    <Content Include="Content\gdp\home\projeto-executivo.jpg" />
+    <Content Include="Content\gdp\home\viabilidade.jpg" />
+    <Content Include="Content\gdp\internas\arquitetura-de-processo-full.jpg" />
+    <Content Include="Content\gdp\internas\arquitetura-de-processo.jpg" />
     <Content Include="Content\images\logo-gdp.png" />
     <Content Include="Content\images\logo.png" />
     <Content Include="Global.asax" />
-    <Content Include="Scripts\bootstrap\js\bootstrap-affix.js" />
-    <Content Include="Scripts\bootstrap\js\bootstrap-alert.js" />
-    <Content Include="Scripts\bootstrap\js\bootstrap-button.js" />
-    <Content Include="Scripts\bootstrap\js\bootstrap-carousel.js" />
-    <Content Include="Scripts\bootstrap\js\bootstrap-collapse.js" />
-    <Content Include="Scripts\bootstrap\js\bootstrap-dropdown.js" />
-    <Content Include="Scripts\bootstrap\js\bootstrap-modal.js" />
-    <Content Include="Scripts\bootstrap\js\bootstrap-popover.js" />
-    <Content Include="Scripts\bootstrap\js\bootstrap-scrollspy.js" />
-    <Content Include="Scripts\bootstrap\js\bootstrap-tab.js" />
-    <Content Include="Scripts\bootstrap\js\bootstrap-tooltip.js" />
-    <Content Include="Scripts\bootstrap\js\bootstrap-transition.js" />
-    <Content Include="Scripts\bootstrap\js\bootstrap-typeahead.js" />
-    <Content Include="Scripts\bootstrap\js\tests\index.html" />
-    <Content Include="Scripts\bootstrap\js\tests\phantom.js" />
-    <Content Include="Scripts\bootstrap\js\tests\server.js" />
-    <Content Include="Scripts\bootstrap\js\tests\unit\bootstrap-affix.js" />
-    <Content Include="Scripts\bootstrap\js\tests\unit\bootstrap-alert.js" />
-    <Content Include="Scripts\bootstrap\js\tests\unit\bootstrap-button.js" />
-    <Content Include="Scripts\bootstrap\js\tests\unit\bootstrap-carousel.js" />
-    <Content Include="Scripts\bootstrap\js\tests\unit\bootstrap-collapse.js" />
-    <Content Include="Scripts\bootstrap\js\tests\unit\bootstrap-dropdown.js" />
-    <Content Include="Scripts\bootstrap\js\tests\unit\bootstrap-modal.js" />
-    <Content Include="Scripts\bootstrap\js\tests\unit\bootstrap-phantom.js" />
-    <Content Include="Scripts\bootstrap\js\tests\unit\bootstrap-popover.js" />
-    <Content Include="Scripts\bootstrap\js\tests\unit\bootstrap-scrollspy.js" />
-    <Content Include="Scripts\bootstrap\js\tests\unit\bootstrap-tab.js" />
-    <Content Include="Scripts\bootstrap\js\tests\unit\bootstrap-tooltip.js" />
-    <Content Include="Scripts\bootstrap\js\tests\unit\bootstrap-transition.js" />
-    <Content Include="Scripts\bootstrap\js\tests\unit\bootstrap-typeahead.js" />
-    <Content Include="Scripts\bootstrap\js\tests\vendor\jquery.js" />
-    <Content Include="Scripts\bootstrap\js\tests\vendor\qunit.css" />
-    <Content Include="Scripts\bootstrap\js\tests\vendor\qunit.js" />
+    <Content Include="Scripts\app.js" />
+    <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\modernizr-2.6.2.js" />
     <Content Include="Web.config" />
     <Content Include="Web.Debug.config">
@@ -232,7 +211,6 @@
     <None Include="BundleTransformer.Configuration.xsd">
       <SubType>Designer</SubType>
     </None>
-    <Content Include="Scripts\bootstrap\js\.jshintrc" />
     <Content Include="Content\bootstrap\less\wells.less" />
     <Content Include="Content\bootstrap\less\variables.less" />
     <Content Include="Content\bootstrap\less\utilities.less" />
@@ -287,7 +265,12 @@
     <Content Include="Views\Pages\Projeto-Basico.cshtml" />
     <Content Include="Views\Pages\Projeto-Executivo.cshtml" />
     <Content Include="Views\Pages\Gerenciamento-Projetos.cshtml" />
-    <Content Include="Views\Pages\Consultorias.cshtml" />
+    <Content Include="Views\Pages\Consultoria.cshtml" />
+    <Content Include="Content\font\League_Gothic-webfont.eot" />
+    <Content Include="Content\font\League_Gothic-webfont.ttf" />
+    <Content Include="Content\font\League_Gothic-webfont.woff" />
+    <Content Include="Views\Pages\Arquitetura-de-Processo.cshtml" />
+    <None Include="Properties\PublishProfiles\Zip.pubxml" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>

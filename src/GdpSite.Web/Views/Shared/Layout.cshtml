@@ -22,7 +22,7 @@
                     <li><a href="/page/estudos-preliminares">Estudos<br> Preliminares</a></li>
                     <li><a href="/page/projeto-basico">Projeto<br> Básico</a></li>
                     <li><a href="/page/projeto-executivo">Projeto<br> Executivo</a></li>
-                    <li><a href="/page/consultorias" class="uma-linha">Consultoria</a></li>
+                    <li><a href="/page/consultoria" class="uma-linha">Consultoria</a></li>
                     <li><a href="/page/arquitetura-de-processo">Arquitetura<br> de Processo</a></li>
                     <li><a href="/page/gerenciamento-projetos" class="uma-linha">Gerenciamento</a></li>
                 </ul>
@@ -40,28 +40,45 @@
                     <img src="@Url.Content("~/Content/images/logo.png")" alt="GDP">
 
                     <div class="contact-info">
-                        Av. Treze de Maio, 15<br>
+                        Av. Treze de Maio, 15 / 1414<br>
                         Centro - Rio de Janeiro<br>
-                        <i class="icon-phone"></i> (21) 2523-2222
+                        <i class="icon-phone"></i> (21) 3684-8869
                     </div>
                 </div>
                 <div class="span8">
                     <h3 class="page-title">Contato</h3>
 
-                    <form method="POST">
+                    <form id="form-contato" action="@Url.Action("Contact","Home")" method="POST">
+                        @Html.AntiForgeryToken()
                         <div class="row">
                             <div class="span6">                                                    
                                 <input type="text" class="span6 input-contato" name="Name" placeholder="Nome ou Empresa">
-                                <textarea rows="5" class="span6 input-contato" placeholder="Mensagem"></textarea>                        
+                                <textarea rows="5" class="span6 input-contato" name="Message" placeholder="Mensagem"></textarea>                        
                             </div>
                             <div class="span1">
                                 <button type="submit" class="enviar-contato">Enviar</button>
                             </div>
                         </div>
                     </form>
+                    
+                    <div id="modal-contato" class="modal fade hide" role="dialog" tabindex="-1">
+                        <div class="modal-header">
+                            <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+                            <h3>Contato enviado!</h3>
+                        </div>
+                        <div class="modal-body">
+                        <p>Em breve estaremos entrando em contato com você!</p>
+                        </div>
+                        <div class="modal-footer">
+                            <button class="btn" data-dismiss="modal" aria-hidden="true">Close</button>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
     </div>
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+    @Scripts.Render("~/bundles/app")
+    @RenderSection("Scripts", false)
 </body>
 </html>

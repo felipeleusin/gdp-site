@@ -17,6 +17,10 @@ namespace GdpSite.Web
 
             bundles.Add(new Bundle("~/bundles/commonStyles", cssTransformer)
                 .Include("~/Content/site.less"));
+
+	        bundles.Add(new ScriptBundle("~/bundles/app")
+				.Include("~/Scripts/bootstrap.js")
+				.Include("~/Scripts/app.js"));
         }
     }
 }
