@@ -20,7 +20,8 @@ namespace GdpSite.Web.Controllers
         }
 
 		[POST("/contato")]
-		public ActionResult Contact(string Name, string Message)
+		[ValidateAntiForgeryToken]
+		public ActionResult Contact(string Name, string Message, string Email)
 		{
 			using (var smtp = new SmtpClient())
 			{
@@ -28,6 +29,7 @@ namespace GdpSite.Web.Controllers
 
 				messageBody.AppendLine(string.Format("Nome: {0}", Name));
 				messageBody.AppendLine(string.Format("Mensagem: {0}", Message));
+				messageBody.AppendLine(string.Format("Email: {0}", Email));
 
 				smtp.Send(new MailMessage("secretaria@gdp.arq.br", "secretaria@gdp.arq.br", "Contato Site", messageBody.ToString()));
 			}

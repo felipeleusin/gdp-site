@@ -52,7 +52,8 @@
                         @Html.AntiForgeryToken()
                         <div class="row">
                             <div class="span6">                                                    
-                                <input type="text" class="span6 input-contato" name="Name" placeholder="Nome ou Empresa">
+                                <input type="text" required class="span6 input-contato" name="Name" placeholder="Nome ou Empresa">
+                                <input type="email" required class="span6 input-contato" name="Email" placeholder="Email para contato" >
                                 <textarea rows="5" class="span6 input-contato" name="Message" placeholder="Mensagem"></textarea>                        
                             </div>
                             <div class="span1">
